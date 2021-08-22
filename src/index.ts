@@ -36,7 +36,11 @@ function Index(filePath: string){
 //supporting function to parse the input file and make it usable by the code
 function ParseFileData(filePath: string) {
     const fileData = fs.readFileSync(filePath, 'utf8');
-    const fileDataArray = fileData.split("\r\n");
+    let lineBreak: string = "";
+    if(process.platform == "win32") lineBreak = "\r\n";
+    if(process.platform == "linux") lineBreak = "\n";
+    if(process.platform == "darwin") lineBreak = "\n";
+    const fileDataArray = fileData.split(lineBreak);
     return fileDataArray;
 }
 
