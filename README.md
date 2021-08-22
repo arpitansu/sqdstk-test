@@ -2,7 +2,7 @@
 - `src/index` is just for driving the code according to needs of this test  
 - Input file location in root directory if you have other data to test just copy paste content to this root dir input file
 - Ignore `src/run` file it was just for testing purpose while developing  
-- If testing in windows and then using linux sub system of windows then please delete node_modules folder and run command `npm install`
+- If testing in windows and then using linux sub system of windows or linux or mac then please delete node_modules folder and run command `npm install`
 
 To run
 1. `npm install`
